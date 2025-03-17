@@ -1,25 +1,28 @@
-# AndroidDrawable  "ldpi", "mdpi", "hdpi", "xhdpi","xxhdpi", "xxxhdpi" 转换工具，Android studio插件 
+# AndroidDrawable – Image Conversion Tool for Android Studio  
 
-![add image](https://github.com/ccc920123/AndroidDrawableFactory/blob/master/resources/icon/main.png)
-<br>
-<img src="https://img-blog.csdnimg.cn/20200706172707868.png"><br>
+![Add Image](https://github.com/ccc920123/AndroidDrawableFactory/blob/master/resources/icon/main.png)  
+<br>  
+<img src="https://img-blog.csdnimg.cn/20200706172707868.png">  
+<br>  
 
-<h3>mdpi图片转换成ldpi, mdpi, hdpi, xhdpi,xxhdpi, xxxhdpi工具</h3><br> 
+### Convert Images Between Different Android Drawable Resolutions  
 
-<h3>ldpi图片转换成ldpi, mdpi, hdpi, xhdpi,xxhdpi, xxxhdpi工具</h3><br> 
+- **Convert mdpi images** to: ldpi, mdpi, hdpi, xhdpi, xxhdpi, xxxhdpi  
+- **Convert ldpi images** to: ldpi, mdpi, hdpi, xhdpi, xxhdpi, xxxhdpi  
+- **Convert xxhdpi images** to: ldpi, mdpi, hdpi, xhdpi, xxhdpi, xxxhdpi  
+- **Convert xxxhdpi images** to: ldpi, mdpi, hdpi, xhdpi, xxhdpi, xxxhdpi  
 
-<h3>xxhdpi图片转换成ldpi, mdpi, hdpi, xhdpi,xxhdpi, xxxhdpi工具</h3><br> 
+## Android Drawable xhdpi – Flexible Image Conversion  
 
-<h3>xxxhdpi图片转换成ldpi, mdpi, hdpi, xhdpi,xxhdpi, xxxhdpi工具</h3><br> 
+Easily convert images between different **Android Drawable resolutions**, including:  
+**ldpi, mdpi, hdpi, xhdpi, xxhdpi, xxxhdpi**.  
 
+For example, if a designer creates an image for an **xhdpi** resolution device, **AndroidDrawable** can generate images for **ldpi, mdpi, hdpi, xhdpi, xxhdpi, and xxxhdpi** automatically.  
 
- <H2>Android Drawable xhdpi  xhdpi图片转换，能任意转换Android Drawable下的各种规格格式</H2> <br>       "ldpi", "mdpi", "hdpi", "xhdpi","xxhdpi", "xxxhdpi" </em>   <br>
- <em>比如我的美工人员设计了一个图片适合 xhdpi 分辨率的手机，我可以通过AndroidDrawable将这个xhdpi转换成;   "ldpi", "mdpi", "hdpi", "xhdpi","xxhdpi", "xxxhdpi"的图片
- <br>
- 
- <H3>下载jar 包</H3>
+---
 
-[AndroidDrawableFactory.jar](https://github.com/ccc920123/AndroidDrawableFactory/blob/master/jar/AndroidDrawableFactory.jar?raw=true)
+## 📥 Download the JAR File  
 
-怎么导入到Android studio 请查看
-<a href="https://blog.csdn.net/ccc920123/article/details/107163641">详细说明文档</a>
+[**AndroidDrawableFactory.jar**](https://github.com/ccc920123/AndroidDrawableFactory/blob/master/jar/AndroidDrawableFactory.jar?raw=true)  
+
+For instructions on how to import it into **Android Studio**, please check the documentation.

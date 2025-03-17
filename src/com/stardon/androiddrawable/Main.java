@@ -51,23 +51,23 @@ public class Main extends JFrame {
     {
         //create components
         imageCanvas = new JLabel(); //image to be used
-        imageCanvas.setText("<html><font size=5 color =blue>点击添加<br> 目标图片</font></html>");
-        imageCanvas.setText("点击添加图片");
+        imageCanvas.setText("<html><font size=5 color =blue>Click to add<br> Target image</font></html>");
+        imageCanvas.setText("Click to add image");
         imageCanvas.setBackground(Color.decode("#33B5E5"));
         imageCanvas.setBorder(BorderFactory.createLineBorder(Color.black));
-        imageCanvas.setToolTipText("点击选择你要转换的图片");
+        imageCanvas.setToolTipText("Click to select the image you want to convert");
         projectPathChooser = new JFileChooser(); //Launch directory selection
         projectPathField = new JTextField(); //Retains  the path selected with JFileChooser
         projectPathField.setEditable(false);
-        projectPathField.setText("图片储存路径");
-        projectPathButton = new JButton("选择..."); //Button that launch JFileChooser
-        sourceDensityLabel = new JLabel("初始文件的密度"); //Label for the source density field
+        projectPathField.setText("Image storage path");
+        projectPathButton = new JButton("Select..."); //Button that launch JFileChooser
+        sourceDensityLabel = new JLabel("Initial file density"); //Label for the source density field
         sourceDensityComboBox = new JComboBox<String>(DrawableAction.DENSITIES); //selector for the source density
-        sourceSizeLabel = new JLabel("文件大小"); //Label for source image's size
+        sourceSizeLabel = new JLabel("File size"); //Label for source image's size
         sourceSizeTextField = new JTextField(); //Field for source image's size
         sourceSizeTextField.setEditable(false);
         densitiesCheckBox = new LinkedHashMap<String, JCheckBox>(); //checkbox Map with densities
-        createButton = new JButton("开始转换"); //button to begin drawable conversion
+        createButton = new JButton("Start conversion"); //button to begin drawable conversion
         densitiesPanel = new JPanel();
         //initialize checkboxes
         for(int i = 0; i < DrawableAction.DENSITIES.length; i++)
@@ -141,7 +141,7 @@ public class Main extends JFrame {
                 if (lastUsedSourceDirectory != null) {
                     imageChooser.setCurrentDirectory(lastUsedSourceDirectory);
                 }
-                imageChooser.setDialogTitle("选择转换的图片");
+                imageChooser.setDialogTitle("Select the image to convert");
                 imageChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
                 imageChooser.setFileFilter(new FileFilter(){
 
@@ -212,7 +212,7 @@ public class Main extends JFrame {
                 if (lastUsedProjectDirectory != null) {
                     projectPathChooser.setCurrentDirectory(lastUsedProjectDirectory);
                 }
-                projectPathChooser.setDialogTitle("应用程序的项目根目录");
+                projectPathChooser.setDialogTitle("Project root directory of the application");
                 projectPathChooser.setAcceptAllFileFilterUsed(false);
                 projectPathChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
                 if(projectPathChooser.showOpenDialog(projectPathButton) ==  JFileChooser.APPROVE_OPTION) {
@@ -231,9 +231,9 @@ public class Main extends JFrame {
             public void actionPerformed(ActionEvent arg0) {
                 // TODO Auto-generated method stub
 
-                if(bufferedSource == null || projectPathField.getText().equals("图片储存路径"))
+                if(bufferedSource == null || projectPathField.getText().equals("Image storage path"))
                 {
-                    JOptionPane.showMessageDialog(rootPane, "请选择图片转换后需要放置的路径", "错误", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(rootPane, "Please select the path where the converted image should be placed", "Error", JOptionPane.ERROR_MESSAGE);
                 }
                 else
                 {
@@ -305,7 +305,7 @@ public class Main extends JFrame {
 
                 public void run() {
                     // TODO Auto-generated method stub
-                    JOptionPane.showMessageDialog(getContentPane(),  "调整完成!", "完成", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(getContentPane(),  "Adjustment completed!", "Completed", JOptionPane.INFORMATION_MESSAGE);
                     createButton.setEnabled(true);
                 }
 

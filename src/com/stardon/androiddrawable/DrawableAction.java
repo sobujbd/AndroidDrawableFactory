@@ -19,7 +19,7 @@ public class DrawableAction extends AnAction {
     }
     @Override
     public void actionPerformed(AnActionEvent e) {
-        initLaF();
+        //initLaF();
         Main mainWindow = new Main();
         mainWindow.pack();
         mainWindow.setTitle("Android图片转换工具");
